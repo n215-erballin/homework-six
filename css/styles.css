@@ -1,0 +1,443 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+/* End of Reset */
+nav {
+  height: 90px;
+  max-width: 980px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #ffffff;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 19px;
+  border-right: solid 1px #79addc;
+  font-family: "gill sans";
+  text-underline-offset: 4px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav .active {
+  color: #79addc;
+  text-decoration: underline;
+}
+nav a:last-of-type {
+  border-right: none;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  background-image: url("../images/logo/logo-white.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav .links {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  justify-content: flex-end;
+}
+
+.nav-black {
+  position: relative;
+  border-bottom: 2px solid black;
+}
+.nav-black a {
+  color: black;
+}
+.nav-black .logo {
+  background-image: url("../images/logo/logo-black.svg");
+}
+
+@media all and (max-width: 780px) {
+  nav a {
+    padding: 0 4px;
+    border: none;
+    font-size: 13px;
+  }
+  nav .logo {
+    width: 80px;
+  }
+}
+.home .hero {
+  height: 500px;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center 44%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "GillSans", sans-serif;
+}
+.home .hero .callout {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.home .hero .callout h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova ScOsf";
+  font-weight: 100;
+}
+.home .hero .callout h4 {
+  font-size: 20px;
+  font-family: "Gill Sans", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  max-width: 420px;
+  text-align: center;
+}
+.home .hero .callout a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #79addc;
+  padding: 11px 20px;
+  font-family: "Gill Sans";
+  font-size: 15px;
+}
+.home .hero .callout a:hover {
+  text-decoration: underline;
+}
+.home .travel-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: -50px;
+  max-width: 980px;
+}
+.home .travel-cards .card {
+  width: 236px;
+  height: 304px;
+  background-image: url("../images/tour/tour-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home .travel-cards .card .details {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  font-family: "Proxima Nova ScOsf";
+  position: relative;
+}
+.home .travel-cards .card .details h1 {
+  font-size: 310%;
+  margin: 0;
+  font-weight: 100;
+}
+.home .travel-cards .card .details h2 {
+  font-size: 155%;
+  font-weight: 100;
+  margin: 0;
+}
+.home .travel-cards .card .details a {
+  margin-top: 56px;
+  padding: 11px 22px;
+  background-color: #79addc;
+  border-radius: 23px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Gill Sans";
+}
+.home .travel-cards .card .details a:hover {
+  text-decoration: underline;
+}
+.home .travel-cards .card.usa {
+  background-image: url("../images/tour/tour-02.jpg");
+}
+.home .travel-cards .card.austrailia {
+  background-image: url("../images/tour/tour-03.jpg");
+}
+.home form {
+  font-family: "gill sans";
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 18px;
+}
+.home form button {
+  width: 100%;
+  background-color: #79addc;
+  height: 60px;
+  color: #ffffff;
+  font-size: 15;
+  font-family: "Gill Sans";
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+  margin-top: 37px;
+  margin-bottom: 100px;
+}
+.home form h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova ScOsf";
+  margin-bottom: 28px;
+  font-weight: 100;
+}
+.home form input,
+.home form textarea {
+  border: 2px solid #79addc;
+  padding: 15px 18px;
+  font-family: "Gill Sans";
+  font-size: 18px;
+  resize: none;
+}
+.home form .messageBox {
+  flex: 1;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 192px;
+}
+.home form .senderInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+  row-gap: 20px;
+}
+.home form .senderInfo input {
+  flex: 40%;
+}
+.home form .senderInfo input:nth-child(2),
+.home form .senderInfo input:nth-child(4) {
+  flex: 70;
+}
+.home form .check-in-out-details div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.home form .check-in-out-details div input[type=date]::-webkit-inner-spin-button,
+.home form .check-in-out-details div input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.home form .check-in-out-details div label {
+  width: 120px;
+  margin: 0;
+}
+.home form .check-in-out-details div input {
+  flex: 3;
+  background-color: #ffffff;
+  margin: 0px;
+  height: 58px;
+  text-align: left;
+}
+.home form .check-in-out-details div i {
+  position: absolute;
+  right: 20.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.home form .room-details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.home form .room-details .flex-label-with-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home form .room-details .flex-label-with-input div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home form .room-details .flex-label-with-input div label {
+  width: 120px;
+  margin: 0;
+}
+.home form .room-details .flex-label-with-input div input {
+  flex: 3;
+  background-color: #ffffff;
+  margin: 0px;
+  height: 58px;
+  width: 103px;
+  text-align: left;
+}
+
+@media all and (max-width: 780px) {
+  .home .travel-cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .home form .senderInfo input,
+  .home form .senderInfo input:nth-child(2),
+  .home form .senderInfo input:nth-child(4) {
+    flex: 1;
+  }
+  .home form .room-details .flex-label-with-input div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .home form .room-details .flex-label-with-input div input {
+    width: 100%;
+    max-width: 120px;
+  }
+}
+footer {
+  height: 100px;
+  background-color: #79addc;
+}
+footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  height: 100%;
+}
+footer .wrapper .logo {
+  width: 92px;
+  height: 42px;
+  background-image: url("../images/logo/logo-white.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+footer .wrapper p {
+  font-family: "Gill Sans";
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0;
+}
+footer .wrapper .links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 22px;
+}
+footer .wrapper .links i {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 25px;
+}
+footer .wrapper .links i:hover {
+  box-shadow: 0px 5px;
+}
+
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.about h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova ScOsf";
+  text-decoration: underline;
+  font-weight: 100;
+  letter-spacing: 6px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 14px;
+  margin-bottom: 35px;
+  margin-top: 100px;
+}
+.about h2 {
+  font-size: 40px;
+  font-family: "Proxima Nova ScOsf";
+  text-decoration: underline;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 14px;
+  margin-bottom: 35px;
+  margin-top: 100px;
+}
+.about p {
+  font-family: "Gill Sans";
+  font-size: 16px;
+  font-weight: normal;
+}
+.about .clientQuotes {
+  margin-bottom: 179px;
+}
+.about .clientQuotes .client-quote-box {
+  display: flex;
+  align-items: center stretch;
+  justify-content: space-evenly;
+  margin-bottom: 37px;
+  gap: 21px;
+  max-width: 676px;
+}
+.about .clientQuotes .client-quote-box .client-img {
+  background-image: url("../images/about-client-01.jpg");
+  width: 260px;
+  flex-shrink: 0;
+  aspect-ratio: 260/150;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about .clientQuotes .client-quote-box .alt-client {
+  background-image: url("../images/about-client-02.jpg");
+}
+.about .clientQuotes .client-quote-box .client-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.about .clientQuotes .client-quote-box .client-info .client-description {
+  font-family: "Gill Sans";
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+.about .clientQuotes .client-quote-box .client-info .client-name {
+  color: #79addc;
+  font-size: 20px;
+  font-family: "Proxima Nova ScOsf";
+  margin: 0;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
