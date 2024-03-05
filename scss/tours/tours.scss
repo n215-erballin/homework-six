@@ -1,0 +1,37 @@
+.tours-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/tour/tours-header.jpg");
+  background-size: cover;
+  background-position: 0 0, 0 -230px;
+  background-repeat: no-repeat;
+
+  margin: 48px 0 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+
+  h1 {
+    font-family: "Proxima Nova ScOsf";
+    color: white;
+    letter-spacing: 6px;
+    font-weight: 100;
+    margin: 0;
+    font-size: 60px;
+  }
+}
+
+.travel-cards {
+  @include travel-card-flexbox();
+  margin: 48px 0 100px 0;
+
+  .card {
+    @include travel-card();
+  }
+  .card.usa {
+    background-image: url("../images/tour/tour-02.jpg");
+  }
+  .card.austrailia {
+    background-image: url("../images/tour/tour-03.jpg");
+  }
+}

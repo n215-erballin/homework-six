@@ -22,6 +22,22 @@ p {
 }
 
 /* End of Reset */
+.wrapper {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app footer {
+  margin-top: auto;
+}
+
 nav {
   height: 90px;
   max-width: 980px;
@@ -137,10 +153,12 @@ nav .links {
 .home .travel-cards {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 20px;
   margin: 0 auto;
   margin-top: -50px;
   max-width: 980px;
+  flex-wrap: nowrap;
 }
 .home .travel-cards .card {
   width: 236px;
@@ -438,6 +456,87 @@ footer .wrapper .links i:hover {
   font-family: "Proxima Nova ScOsf";
   margin: 0;
   margin-left: auto;
+}
+
+.tours-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tours-header.jpg");
+  background-size: cover;
+  background-position: 0 0, 0 -230px;
+  background-repeat: no-repeat;
+  margin: 48px 0 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.tours-hero h1 {
+  font-family: "Proxima Nova ScOsf";
+  color: white;
+  letter-spacing: 6px;
+  font-weight: 100;
+  margin: 0;
+  font-size: 60px;
+}
+
+.travel-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -50px;
+  max-width: 980px;
+  flex-wrap: wrap;
+  gap: 55px;
+  flex-basis: 33%;
+  margin: 48px 0 100px 0;
+}
+.travel-cards .card {
+  width: 236px;
+  height: 304px;
+  background-image: url("../images/tour/tour-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.travel-cards .card .details {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  font-family: "Proxima Nova ScOsf";
+  position: relative;
+}
+.travel-cards .card .details h1 {
+  font-size: 310%;
+  margin: 0;
+  font-weight: 100;
+}
+.travel-cards .card .details h2 {
+  font-size: 155%;
+  font-weight: 100;
+  margin: 0;
+}
+.travel-cards .card .details a {
+  margin-top: 56px;
+  padding: 11px 22px;
+  background-color: #79addc;
+  border-radius: 23px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Gill Sans";
+}
+.travel-cards .card .details a:hover {
+  text-decoration: underline;
+}
+.travel-cards .card.usa {
+  background-image: url("../images/tour/tour-02.jpg");
+}
+.travel-cards .card.austrailia {
+  background-image: url("../images/tour/tour-03.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */

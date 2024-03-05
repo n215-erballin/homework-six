@@ -19,3 +19,18 @@ p {
   margin-bottom: 16px;
 }
 /* End of Reset */
+.wrapper {
+  width: 90%;
+  max-width: $content-width;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  footer {
+    margin-top: auto;
+  }
+}

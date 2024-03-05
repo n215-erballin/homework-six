@@ -49,10 +49,12 @@
   .travel-cards {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 20px;
     margin: 0 auto;
     margin-top: -50px;
     max-width: $content-width;
+    flex-wrap: nowrap;
 
     .card {
       width: 236px;
