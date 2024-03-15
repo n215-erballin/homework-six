@@ -14,6 +14,6 @@ Each individual page must look like the prototype and the text inside the header
 Your page must be responsive.
 You can align the elements as you wish but they must look good and not touch the sides of the browser.
 
-##Comments
+## Comments
 This home assignment specifically/ project really got me to love SASS, it felt like it just clicked for me when doing this.
 The tour pages seemed like a lot, but with SASS variables I found a workflow that made the process quick while also giving me more control with SASS variables and mixins. The highlight for me from this assignment is the tour pages which all have 3 images under the hero that I called "tour highlights" and using SASS I was able to use the nth child's variable inside of the image url, which cut my code down significally from hard coding each image url had I not used SASS.  Definetly a fun assignment that has taught me a good bit.
