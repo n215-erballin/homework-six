@@ -55,5 +55,20 @@
   }
 }
 @mixin background-img($srcinput) {
-  background-image: url($srcinput);
+  background-image: url($srcinput) !important;
+}
+@mixin background-img-with-overlay($srcinput) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url($srcinput);
+}
+
+@mixin tour-hightlights($tour) {
+  $elements: 3;
+  @for $i from 0 to $elements {
+    .highlight:nth-child(#{$i + 1}) {
+      @include background-img(
+        "../images/tour/tour-#{$tour}/#{$tour}-tour-0#{$i+1}.jpg"
+      );
+    }
+  }
 }

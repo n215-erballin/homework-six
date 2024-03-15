@@ -1,3 +1,320 @@
+.tours-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tours-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 48px 0 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.tours-hero h1 {
+  font-family: "Proxima Nova ScOsf";
+  color: white;
+  letter-spacing: 6px;
+  font-weight: 100;
+  margin: 0;
+  font-size: 60px;
+}
+
+.tour-page-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tours-header.jpg");
+  background-size: cover;
+  background-position: 0 0, center;
+  background-repeat: no-repeat;
+  margin: 48px 0 48px 0;
+  height: 413px;
+  padding: 30px;
+  position: relative;
+}
+.tour-page-hero h1 {
+  font-family: "Proxima Nova ScOsf";
+  color: white;
+  letter-spacing: 0px;
+  font-weight: 100;
+  margin: 0;
+  font-size: 80px;
+}
+.tour-page-hero h2 {
+  font-family: "Proxima Nova ScOsf";
+  color: white;
+  letter-spacing: 0px;
+  font-weight: 100;
+  margin: 0;
+  font-size: 30px;
+  position: absolute;
+  right: 3px;
+  bottom: 0;
+}
+
+.travel-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -50px;
+  max-width: 980px;
+  flex-wrap: wrap;
+  gap: 55px;
+  flex-basis: 33%;
+  margin: 48px 0 100px 0;
+}
+.travel-cards .card {
+  width: 236px;
+  height: 304px;
+  background-image: url("../images/tour/tour-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.travel-cards .card .details {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  font-family: "Proxima Nova ScOsf";
+  position: relative;
+}
+.travel-cards .card .details h1 {
+  font-size: 310%;
+  margin: 0;
+  font-weight: 100;
+}
+.travel-cards .card .details h2 {
+  font-size: 155%;
+  font-weight: 100;
+  margin: 0;
+}
+.travel-cards .card .details a {
+  margin-top: 56px;
+  padding: 11px 22px;
+  background-color: #79addc;
+  border-radius: 23px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Gill Sans";
+}
+.travel-cards .card .details a:hover {
+  text-decoration: underline;
+}
+.travel-cards .card.israel {
+  background-image: url("../images/tour/tour-01.jpg") !important;
+}
+.travel-cards .card.usa {
+  background-image: url("../images/tour/tour-02.jpg") !important;
+}
+.travel-cards .card.australia {
+  background-image: url("../images/tour/tour-03.jpg") !important;
+}
+.travel-cards .card.newzealand {
+  background-image: url("../images/tour/tour-04.jpg") !important;
+}
+.travel-cards .card.france {
+  background-image: url("../images/tour/tour-05.jpg") !important;
+}
+.travel-cards .card.egypt {
+  background-image: url("../images/tour/tour-06.jpg") !important;
+}
+.travel-cards .card.japan {
+  background-image: url("../images/tour/tour-07.jpg") !important;
+}
+.travel-cards .card.canada {
+  background-image: url("../images/tour/tour-08.jpg") !important;
+}
+.travel-cards .card.uae {
+  background-image: url("../images/tour/tour-09.jpg") !important;
+}
+
+.tour-page-hero.israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
+}
+
+.tour-page-hero.usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
+}
+
+.tour-page-hero.australia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
+}
+
+.tour-page-hero.newzealand {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-04.jpg");
+}
+
+.tour-page-hero.france {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-05.jpg");
+}
+
+.tour-page-hero.egypt {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-06.jpg");
+}
+
+.tour-page-hero.japan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-07.jpg");
+}
+
+.tour-page-hero.canada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-08.jpg");
+}
+
+.tour-page-hero.uae {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tour-09.jpg");
+}
+
+.tour-highlights {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.tour-highlights .highlight {
+  height: 347px;
+  flex: 1;
+  max-width: 298px;
+  background-image: url(/images/about-client-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tour-highlights.israel .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-israel/israel-tour-01.jpg") !important;
+}
+.tour-highlights.israel .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-israel/israel-tour-02.jpg") !important;
+}
+.tour-highlights.israel .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-israel/israel-tour-03.jpg") !important;
+}
+
+.tour-highlights.usa .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-usa/usa-tour-01.jpg") !important;
+}
+.tour-highlights.usa .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-usa/usa-tour-02.jpg") !important;
+}
+.tour-highlights.usa .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-usa/usa-tour-03.jpg") !important;
+}
+
+.tour-highlights.australia .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-aus/aus-tour-01.jpg") !important;
+}
+.tour-highlights.australia .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-aus/aus-tour-02.jpg") !important;
+}
+.tour-highlights.australia .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-aus/aus-tour-03.jpg") !important;
+}
+
+.tour-highlights.newzealand .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-nz/nz-tour-01.jpg") !important;
+}
+.tour-highlights.newzealand .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-nz/nz-tour-02.jpg") !important;
+}
+.tour-highlights.newzealand .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-nz/nz-tour-03.jpg") !important;
+}
+
+.tour-highlights.france .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-france/france-tour-01.jpg") !important;
+}
+.tour-highlights.france .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-france/france-tour-02.jpg") !important;
+}
+.tour-highlights.france .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-france/france-tour-03.jpg") !important;
+}
+
+.tour-highlights.egypt .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-egypt/egypt-tour-01.jpg") !important;
+}
+.tour-highlights.egypt .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-egypt/egypt-tour-02.jpg") !important;
+}
+.tour-highlights.egypt .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-egypt/egypt-tour-03.jpg") !important;
+}
+
+.tour-highlights.japan .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-japan/japan-tour-01.jpg") !important;
+}
+.tour-highlights.japan .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-japan/japan-tour-02.jpg") !important;
+}
+.tour-highlights.japan .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-japan/japan-tour-03.jpg") !important;
+}
+
+.tour-highlights.canada .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-canada/canada-tour-01.jpg") !important;
+}
+.tour-highlights.canada .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-canada/canada-tour-02.jpg") !important;
+}
+.tour-highlights.canada .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-canada/canada-tour-03.jpg") !important;
+}
+
+.tour-highlights.uae .highlight:nth-child(1) {
+  background-image: url("../images/tour/tour-uae/uae-tour-01.jpg") !important;
+}
+.tour-highlights.uae .highlight:nth-child(2) {
+  background-image: url("../images/tour/tour-uae/uae-tour-02.jpg") !important;
+}
+.tour-highlights.uae .highlight:nth-child(3) {
+  background-image: url("../images/tour/tour-uae/uae-tour-03.jpg") !important;
+}
+
+.tour-schedule {
+  margin-top: 10px;
+}
+.tour-schedule .day-entry {
+  margin-bottom: 80px;
+}
+.tour-schedule .day-entry h1 {
+  font-family: "Proxima Nova ScOsf";
+  color: black;
+  letter-spacing: 6px;
+  font-weight: 100;
+  margin: 0 0 35px 0;
+  font-size: 60px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 12px;
+}
+.tour-schedule .day-entry p {
+  font-size: 16px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.tour-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 80px 0 100px 0;
+}
+.tour-book-btn a {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 15px;
+  padding: 11px 22px;
+  background-color: #79addc;
+  border-radius: 23px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.tour-book-btn a:hover {
+  text-decoration: underline;
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -456,105 +773,6 @@ footer .wrapper .links i:hover {
   font-family: "Proxima Nova ScOsf";
   margin: 0;
   margin-left: auto;
-}
-
-.tours-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tour/tours-header.jpg");
-  background-size: cover;
-  background-position: 0 0, 0 -230px;
-  background-repeat: no-repeat;
-  margin: 48px 0 48px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 200px;
-}
-.tours-hero h1 {
-  font-family: "Proxima Nova ScOsf";
-  color: white;
-  letter-spacing: 6px;
-  font-weight: 100;
-  margin: 0;
-  font-size: 60px;
-}
-
-.travel-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: -50px;
-  max-width: 980px;
-  flex-wrap: wrap;
-  gap: 55px;
-  flex-basis: 33%;
-  margin: 48px 0 100px 0;
-}
-.travel-cards .card {
-  width: 236px;
-  height: 304px;
-  background-image: url("../images/tour/tour-01.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.travel-cards .card .details {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  flex-direction: column;
-  font-family: "Proxima Nova ScOsf";
-  position: relative;
-}
-.travel-cards .card .details h1 {
-  font-size: 310%;
-  margin: 0;
-  font-weight: 100;
-}
-.travel-cards .card .details h2 {
-  font-size: 155%;
-  font-weight: 100;
-  margin: 0;
-}
-.travel-cards .card .details a {
-  margin-top: 56px;
-  padding: 11px 22px;
-  background-color: #79addc;
-  border-radius: 23px;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-family: "Gill Sans";
-}
-.travel-cards .card .details a:hover {
-  text-decoration: underline;
-}
-.travel-cards .card.usa {
-  background-image: url("../images/tour/tour-02.jpg");
-}
-.travel-cards .card.australia {
-  background-image: url("../images/tour/tour-03.jpg");
-}
-.travel-cards .card.newzealand {
-  background-image: url("../images/tour/tour-04.jpg");
-}
-.travel-cards .card.france {
-  background-image: url("../images/tour/tour-05.jpg");
-}
-.travel-cards .card.egypt {
-  background-image: url("../images/tour/tour-06.jpg");
-}
-.travel-cards .card.japan {
-  background-image: url("../images/tour/tour-07.jpg");
-}
-.travel-cards .card.canada {
-  background-image: url("../images/tour/tour-08.jpg");
-}
-.travel-cards .card.uae {
-  background-image: url("../images/tour/tour-09.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */
