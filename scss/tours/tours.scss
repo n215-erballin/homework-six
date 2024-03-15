@@ -29,9 +29,27 @@
     @include travel-card();
   }
   .card.usa {
-    background-image: url("../images/tour/tour-02.jpg");
+    @include background-img("../images/tour/tour-02.jpg");
   }
-  .card.austrailia {
-    background-image: url("../images/tour/tour-03.jpg");
+  .card.australia {
+    @include background-img("../images/tour/tour-03.jpg");
+  }
+  .card.newzealand {
+    @include background-img("../images/tour/tour-04.jpg");
+  }
+  .card.france {
+    @include background-img("../images/tour/tour-05.jpg");
+  }
+  .card.egypt {
+    @include background-img("../images/tour/tour-06.jpg");
+  }
+  .card.japan {
+    @include background-img("../images/tour/tour-07.jpg");
+  }
+  .card.canada {
+    @include background-img("../images/tour/tour-08.jpg");
+  }
+  .card.uae {
+    @include background-img("../images/tour/tour-09.jpg");
   }
 }

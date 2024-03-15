@@ -54,3 +54,6 @@
     }
   }
 }
+@mixin background-img($srcinput) {
+  background-image: url($srcinput);
+}
